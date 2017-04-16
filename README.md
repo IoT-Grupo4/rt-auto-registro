@@ -10,7 +10,7 @@ Conforme executada no Ubuntu 16.04:
 
 ```bash
 $ sudo apt-get install python3-pip
-$ sudo pip3 install setuptools PyYAML tornado
+$ sudo pip3 install -r requeriments.txt
 ```
 
 # Execução
