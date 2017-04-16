@@ -1,0 +1,15 @@
+register_info:
+  name: Raspberry 01 de Testes do Grupo 4
+  chipset: SoC Broadcom BCM2837
+  mac: 82-4B-E3-FE-F9-23
+  serial: RP1280091
+  processor: 4× ARM Cortex-A53
+  channel: Wi-Fi
+  raise_url: http://homol.redes.unb.br/uiot-raise
+  client_register_path: /client/register
+  service_register_path: /service/register
+  data_register_path: /data/register
+  token_file: token
+logging:
+  level: DEBUG
+  filename: register.log

@@ -1,0 +1,245 @@
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fbc0eab8278> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 36, in register_device
+    "timestamp": register_info["timestamp"]
+KeyError: 'timestamp'
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fb1a7d0c278> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 36, in register_device
+    "timestamp": register_info["timestamp"]
+KeyError: 'timestamp'
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7ff0e4544208> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 43, in register_device
+    http_response == request_handler.send_data(url, post_data)
+NameError: name 'http_response' is not defined
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7f850ec3f278> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 43, in register_device
+    http_response = request_handler.send_data(url, post_data)
+NameError: name 'request_handler' is not defined
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7f877a406278> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 45, in register_device
+    logging.debug('Register request completed')
+NameError: name 'logging' is not defined
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7f877a4062b0> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 285, in wrapper
+    yielded = next(result)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RequestHandler.py", line 21, in send_data
+    url=self.url,\
+AttributeError: 'RequestHandler' object has no attribute 'url'
+DEBUG:root:Register request completed
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fc73dd04278> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 47, in register_device
+    logging.debug('received token: '+http_response.body["token_id"])
+AttributeError: 'Future' object has no attribute 'body'
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fc73dd042b0> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 285, in wrapper
+    yielded = next(result)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RequestHandler.py", line 21, in send_data
+    url=self.url,\
+AttributeError: 'RequestHandler' object has no attribute 'url'
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'channel': 'Wi-Fi', 'chipset': 'SoC Broadcom BCM2837', 'timestamp': 1492361169.8480833, 'serial': 'RP1280091', 'processor': '4× ARM Cortex-A53', 'mac': '82-4B-E3-FE-F9-23', 'name': 'Raspberry 01 de Testes do Grupo 4'}
+DEBUG:root:Register request completed
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fb5d2981278> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 47, in register_device
+    logging.debug('received token: '+http_response.body["token_id"])
+AttributeError: 'Future' object has no attribute 'body'
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'mac': '82-4B-E3-FE-F9-23', 'channel': 'Wi-Fi', 'name': 'Raspberry 01 de Testes do Grupo 4', 'timestamp': 1492361231.8055234, 'processor': '4× ARM Cortex-A53', 'chipset': 'SoC Broadcom BCM2837', 'serial': 'RP1280091'}
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'mac': '82-4B-E3-FE-F9-23', 'name': 'Raspberry 01 de Testes do Grupo 4', 'processor': '4× ARM Cortex-A53', 'chipset': 'SoC Broadcom BCM2837', 'channel': 'Wi-Fi', 'timestamp': 1492361333.0595639, 'serial': 'RP1280091'}
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'channel': 'Wi-Fi', 'processor': '4× ARM Cortex-A53', 'name': 'Raspberry 01 de Testes do Grupo 4', 'chipset': 'SoC Broadcom BCM2837', 'mac': '82-4B-E3-FE-F9-23', 'serial': 'RP1280091', 'timestamp': 1492361389}
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'chipset': 'SoC Broadcom BCM2837', 'processor': '4× ARM Cortex-A53', 'mac': '82-4B-E3-FE-F9-23', 'timestamp': 1492361441, 'name': 'Raspberry 01 de Testes do Grupo 4', 'channel': 'Wi-Fi', 'serial': 'RP1280091'}
+DEBUG:root:url: homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'chipset': 'SoC Broadcom BCM2837', 'channel': 'Wi-Fi', 'processor': '4× ARM Cortex-A53', 'timestamp': 1492361550, 'name': 'Raspberry 01 de Testes do Grupo 4', 'serial': 'RP1280091', 'mac': '82-4B-E3-FE-F9-23'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'timestamp': 1492361563, 'chipset': 'SoC Broadcom BCM2837', 'processor': '4× ARM Cortex-A53', 'channel': 'Wi-Fi', 'mac': '82-4B-E3-FE-F9-23', 'serial': 'RP1280091', 'name': 'Raspberry 01 de Testes do Grupo 4'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'serial': 'RP1280091', 'chipset': 'SoC Broadcom BCM2837', 'timestamp': 1492361678, 'channel': 'Wi-Fi', 'mac': '82-4B-E3-FE-F9-23', 'processor': '4× ARM Cortex-A53', 'name': 'Raspberry 01 de Testes do Grupo 4'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'chipset': 'SoC Broadcom BCM2837', 'name': 'Raspberry 01 de Testes do Grupo 4', 'timestamp': 1492361687, 'processor': '4× ARM Cortex-A53', 'serial': 'RP1280091', 'mac': '82-4B-E3-FE-F9-23', 'channel': 'Wi-Fi'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'timestamp': 1492361729, 'chipset': 'SoC Broadcom BCM2837', 'name': 'Raspberry 01 de Testes do Grupo 4', 'mac': '82-4B-E3-FE-F9-23', 'channel': 'Wi-Fi', 'processor': '4× ARM Cortex-A53', 'serial': 'RP1280091'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'processor': '4× ARM Cortex-A53', 'timestamp': 1492361735, 'chipset': 'SoC Broadcom BCM2837', 'mac': '82-4B-E3-FE-F9-23', 'name': 'Raspberry 01 de Testes do Grupo 4', 'serial': 'RP1280091', 'channel': 'Wi-Fi'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'serial': 'RP1280091', 'timestamp': 1492361818, 'name': 'Raspberry 01 de Testes do Grupo 4', 'mac': '82-4B-E3-FE-F9-23', 'processor': '4× ARM Cortex-A53', 'channel': 'Wi-Fi', 'chipset': 'SoC Broadcom BCM2837'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'serial': 'RP1280091', 'chipset': 'SoC Broadcom BCM2837', 'processor': '4× ARM Cortex-A53', 'timestamp': 1492361860, 'channel': 'Wi-Fi', 'name': 'Raspberry 01 de Testes do Grupo 4', 'mac': '82-4B-E3-FE-F9-23'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'serial': 'RP1280091', 'channel': 'Wi-Fi', 'name': 'Raspberry 01 de Testes do Grupo 4', 'processor': '4× ARM Cortex-A53', 'mac': '82-4B-E3-FE-F9-23', 'timestamp': 1492361898, 'chipset': 'SoC Broadcom BCM2837'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'processor': '4× ARM Cortex-A53', 'name': 'Raspberry 01 de Testes do Grupo 4', 'serial': 'RP1280091', 'mac': '82-4B-E3-FE-F9-23', 'channel': 'Wi-Fi', 'timestamp': 1492361911, 'chipset': 'SoC Broadcom BCM2837'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'chipset': 'SoC Broadcom BCM2837', 'processor': '4× ARM Cortex-A53', 'mac': '82-4B-E3-FE-F9-23', 'serial': 'RP1280091', 'name': 'Raspberry 01 de Testes do Grupo 4', 'timestamp': 1492361971, 'channel': 'Wi-Fi'}
+DEBUG:root:Response: 
+DEBUG:root:b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "4b334b7c00a934c9b546d47d3aac7372"\n}'
+DEBUG:root:http_response
+DEBUG:root:HTTPResponse(_body=b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "4b334b7c00a934c9b546d47d3aac7372"\n}',buffer=<_io.BytesIO object at 0x7f8cf74e19e8>,code=200,effective_url='http://homol.redes.unb.br/uiot-raise/client/register',error=None,headers=<tornado.httputil.HTTPHeaders object at 0x7f8cfb0167f0>,reason='OK',request=<tornado.httpclient.HTTPRequest object at 0x7f8cf74e7d30>,request_time=0.39220476150512695,time_info={})
+DEBUG:root:Register request completed
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7f8cf7537278> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1024, in run
+    yielded = self.gen.send(value)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 49, in register_device
+    logging.debug('received token: '+http_response.body["token_id"])
+TypeError: byte indices must be integers or slices, not str
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'mac': '82-4B-E3-FE-F9-23', 'name': 'Raspberry 01 de Testes do Grupo 4', 'processor': '4× ARM Cortex-A53', 'serial': 'RP1280091', 'channel': 'Wi-Fi', 'chipset': 'SoC Broadcom BCM2837', 'timestamp': 1492362010}
+DEBUG:root:Response: 
+DEBUG:root:b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "1352cd58975072960c50646835d248d0"\n}'
+DEBUG:root:http_response
+DEBUG:root:HTTPResponse(_body=b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "1352cd58975072960c50646835d248d0"\n}',buffer=<_io.BytesIO object at 0x7f3545b3c9e8>,code=200,effective_url='http://homol.redes.unb.br/uiot-raise/client/register',error=None,headers=<tornado.httputil.HTTPHeaders object at 0x7f35496707f0>,reason='OK',request=<tornado.httpclient.HTTPRequest object at 0x7f3545b42d68>,request_time=0.1307528018951416,time_info={})
+DEBUG:root:Register request completed
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7f3545b922b0> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1024, in run
+    yielded = self.gen.send(value)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 50, in register_device
+    http_response.body.decode('utf-8')["token_id"])
+TypeError: string indices must be integers
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'timestamp': 1492362080, 'channel': 'Wi-Fi', 'name': 'Raspberry 01 de Testes do Grupo 4', 'processor': '4× ARM Cortex-A53', 'mac': '82-4B-E3-FE-F9-23', 'chipset': 'SoC Broadcom BCM2837', 'serial': 'RP1280091'}
+DEBUG:root:Response: 
+DEBUG:root:b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "c10995762ef9891e311ad5ebc68c8db2"\n}'
+DEBUG:root:http_response
+DEBUG:root:HTTPResponse(_body=b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "c10995762ef9891e311ad5ebc68c8db2"\n}',buffer=<_io.BytesIO object at 0x7fbd4e9619e8>,code=200,effective_url='http://homol.redes.unb.br/uiot-raise/client/register',error=None,headers=<tornado.httputil.HTTPHeaders object at 0x7fbd524956d8>,reason='OK',request=<tornado.httpclient.HTTPRequest object at 0x7fbd4e967da0>,request_time=0.12984395027160645,time_info={})
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fbd4e9b72b0> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1024, in run
+    yielded = self.gen.send(value)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 48, in register_device
+    http_response = json.loads(http_response.body.decode('utf-8'))
+NameError: name 'json' is not defined
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'timestamp': 1492362090, 'channel': 'Wi-Fi', 'chipset': 'SoC Broadcom BCM2837', 'processor': '4× ARM Cortex-A53', 'name': 'Raspberry 01 de Testes do Grupo 4', 'mac': '82-4B-E3-FE-F9-23', 'serial': 'RP1280091'}
+DEBUG:root:Response: 
+DEBUG:root:b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "44d2dfa352b9d13de76ba00143c5ef31"\n}'
+DEBUG:root:http_response
+DEBUG:root:HTTPResponse(_body=b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "44d2dfa352b9d13de76ba00143c5ef31"\n}',buffer=<_io.BytesIO object at 0x7f387d5a99e8>,code=200,effective_url='http://homol.redes.unb.br/uiot-raise/client/register',error=None,headers=<tornado.httputil.HTTPHeaders object at 0x7f38810dd6d8>,reason='OK',request=<tornado.httpclient.HTTPRequest object at 0x7f387d5afda0>,request_time=0.48224949836730957,time_info={})
+DEBUG:root:Register request completed
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7f387d5ff2b0> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1024, in run
+    yielded = self.gen.send(value)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 51, in register_device
+    logging.debug('received token: '+http_response["token_id"])
+KeyError: 'token_id'
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'name': 'Raspberry 01 de Testes do Grupo 4', 'timestamp': 1492362101, 'mac': '82-4B-E3-FE-F9-23', 'chipset': 'SoC Broadcom BCM2837', 'serial': 'RP1280091', 'channel': 'Wi-Fi', 'processor': '4× ARM Cortex-A53'}
+DEBUG:root:Response: 
+DEBUG:root:b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "ac2fc13d106dcbcbd570d4fadd4767a3"\n}'
+DEBUG:root:http_response
+DEBUG:root:HTTPResponse(_body=b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "ac2fc13d106dcbcbd570d4fadd4767a3"\n}',buffer=<_io.BytesIO object at 0x7fe92737d9e8>,code=200,effective_url='http://homol.redes.unb.br/uiot-raise/client/register',error=None,headers=<tornado.httputil.HTTPHeaders object at 0x7fe92aeb17f0>,reason='OK',request=<tornado.httpclient.HTTPRequest object at 0x7fe927383dd8>,request_time=0.10952949523925781,time_info={})
+DEBUG:root:Register request completed
+DEBUG:root:received token: ac2fc13d106dcbcbd570d4fadd4767a3
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'channel': 'Wi-Fi', 'processor': '4× ARM Cortex-A53', 'mac': '82-4B-E3-FE-F9-23', 'serial': 'RP1280091', 'timestamp': 1492362303, 'name': 'Raspberry 01 de Testes do Grupo 4', 'chipset': 'SoC Broadcom BCM2837'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'mac': '82-4B-E3-FE-F9-23', 'channel': 'Wi-Fi', 'chipset': 'SoC Broadcom BCM2837', 'timestamp': 1492362337, 'name': 'Raspberry 01 de Testes do Grupo 4', 'serial': 'RP1280091', 'processor': '4× ARM Cortex-A53'}
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'channel': 'Wi-Fi', 'serial': 'RP1280091', 'chipset': 'SoC Broadcom BCM2837', 'timestamp': 1492362424, 'name': 'Raspberry 01 de Testes do Grupo 4', 'processor': '4× ARM Cortex-A53', 'mac': '82-4B-E3-FE-F9-23'}
+DEBUG:root:Response: 
+DEBUG:root:b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "8c84921a348ea5f1c709cc4f6c035cdf"\n}'
+DEBUG:root:http_response
+DEBUG:root:HTTPResponse(_body=b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "8c84921a348ea5f1c709cc4f6c035cdf"\n}',buffer=<_io.BytesIO object at 0x7fcf13cfc990>,code=200,effective_url='http://homol.redes.unb.br/uiot-raise/client/register',error=None,headers=<tornado.httputil.HTTPHeaders object at 0x7fcf178306a0>,reason='OK',request=<tornado.httpclient.HTTPRequest object at 0x7fcf13d02e48>,request_time=0.12877821922302246,time_info={})
+DEBUG:root:Register request completed
+DEBUG:root:received token: 8c84921a348ea5f1c709cc4f6c035cdf
+DEBUG:root:token written to file: token
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7f41d83573c8> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 285, in wrapper
+    yielded = next(result)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 49, in register_device
+    if (yield __check_register): # verifica se precisa registrar!
+NameError: name '_RegisterHandler__check_register' is not defined
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fa491ff63c8> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1021, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 49, in register_device
+    if (yield self.__check_register): # verifica se precisa registrar!
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1015, in run
+    value = future.result()
+  File "/usr/local/lib/python3.5/dist-packages/tornado/concurrent.py", line 237, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1097, in handle_yield
+    self.future = convert_yielded(yielded)
+  File "/usr/lib/python3.5/functools.py", line 743, in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1229, in convert_yielded
+    raise BadYieldError("yielded unknown object %r" % (yielded,))
+tornado.gen.BadYieldError: yielded unknown object <bound method RegisterHandler.__check_register of <handlers.RegisterHandler.RegisterHandler object at 0x7fa491ff6358>>
+ERROR:tornado.application:Future <tornado.concurrent.Future object at 0x7fbd884db390> exception was never retrieved: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1021, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 48, in register_device
+    is_registered = yield self.__check_register()
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1015, in run
+    value = future.result()
+  File "/usr/local/lib/python3.5/dist-packages/tornado/concurrent.py", line 237, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 270, in wrapper
+    result = func(*args, **kwargs)
+  File "/usr/lib/python3.5/types.py", line 243, in wrapped
+    coro = func(*args, **kwargs)
+  File "/home/jg/Dropbox/UnB_Mestrado/2017.01/rt-auto-registro-repo/handlers/RegisterHandler.py", line 13, in __check_register
+    token_file = register_info["token_file"]
+NameError: name 'register_info' is not defined
+DEBUG:root:read token from file: 8c84921a348ea5f1c709cc4f6c035cdf
+DEBUG:root:valid token, returning
+DEBUG:root:read token from file: 8c84921a348ea5f1c709cc4f6c035cdf
+DEBUG:root:valid token, returning
+DEBUG:root:token not found, registering...
+DEBUG:root:url: http://homol.redes.unb.br/uiot-raise/client/register
+DEBUG:root:Trying to do http request with data:
+DEBUG:root:{'name': 'Raspberry 01 de Testes do Grupo 4', 'chipset': 'SoC Broadcom BCM2837', 'serial': 'RP1280091', 'channel': 'Wi-Fi', 'timestamp': 1492362976, 'mac': '82-4B-E3-FE-F9-23', 'processor': '4× ARM Cortex-A53'}
+DEBUG:root:Response: 
+DEBUG:root:b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "c2d7fd761319430e63b2b064cdca7c3c"\n}'
+DEBUG:root:http_response
+DEBUG:root:HTTPResponse(_body=b'{\n    "code": "200",\n    "message": "Success",\n    "tokenId": "c2d7fd761319430e63b2b064cdca7c3c"\n}',buffer=<_io.BytesIO object at 0x7f7f2b979a98>,code=200,effective_url='http://homol.redes.unb.br/uiot-raise/client/register',error=None,headers=<tornado.httputil.HTTPHeaders object at 0x7f7f2f4ac7b8>,reason='OK',request=<tornado.httpclient.HTTPRequest object at 0x7f7f2b98c0f0>,request_time=3.1332905292510986,time_info={})
+DEBUG:root:Register request completed
+DEBUG:root:received token: c2d7fd761319430e63b2b064cdca7c3c
+DEBUG:root:token written to file token
