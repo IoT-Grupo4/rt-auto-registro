@@ -5,6 +5,8 @@ from tornado import gen
 import time
 import logging
 import json
+import platform
+import uuid 
 
 class RegisterHandler:
 
@@ -28,6 +30,16 @@ class RegisterHandler:
 
         self.register_info = ConfigHandler.config["register_info"]
         self.request_handler = request_handler
+
+        # overwrite with local info
+
+        # smart device's name
+        self.register_info['name'] = platform.node() 
+        # smart device's mac
+        self.register_info['mac'] = '-'.join(['{:02x}'.format((uuid.getnode() >> i) & 0xff) for i in range(0,8*6,8)][::-1]) 
+        # smart device's chipset
+        self.register_info['chipset'] = platform.machine() 
+
 
     @gen.coroutine
     def register_device(self):
